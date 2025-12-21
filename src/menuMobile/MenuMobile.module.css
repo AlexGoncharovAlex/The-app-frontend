@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+h2,
+a,
+.active {
+  color: rgba(16, 16, 16, 1);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.wrapper {
+  width: 294px;
+  max-height: 643px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 0px 0px 0px 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 1);
+  padding: 15px 21px 24px 23px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.menu_item > h2 {
+  position: relative;
+  left: 62%;
+  transform: translateX(-50%);
+  padding-top: 1%;
+}
+.menu_item > h2::before {
+  content: url('../png/selectPhone.png');
+  /* padding-right: 6%; */
+  position: absolute;
+  top: 68%;
+  transform: translate(-50%, -50%);
+  left: -8.5%;
+}
+.menu_item > h2::after {
+  content: url('../png/arrowUpDown.png');
+  padding-left: 8%;
+  position: absolute;
+  top: 45%;
+
+  transform: translate(-50%, -50%);
+  transform: translateY(-50%, -50%) rotate(180deg);
+}
+.menu_item h2,
+.submenu_item h2,
+.submenu_item a {
+  display: block;
+  cursor: pointer;
+}
+
+.submenu {
+  padding-top: 5px;
+}
+.submenu_item > h2 {
+  padding-top: 10px;
+}
+
+.submenu_item > h2::before {
+  content: url('../png/arrowUpDown.png');
+  padding-right: 3%;
+}
+.submenu_2 a {
+  padding-top: 10px;
+}
+.submenu_2 a:hover {
+  color: orange;
+}
+.submenu > li {
+  padding-left: 16%;
+}
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+}
+/* ----------------------- */
+/* высота выпадающего блока */
+.menu_item:hover > .submenu {
+  max-height: 450px;
+}
+/* ------------------------ */
+
+.submenu_2 {
+  overflow: hidden;
+
+  max-height: 0; /* скрыто */
+  transition: max-height 0.3s ease;
+}
+.submenu_item:hover > .submenu_2 {
+  max-height: 200px; /* ДОЛЖНО БЫТЬ БОЛЬШЕ реального контента */
+}
+.submenu_2 li a {
+  padding: 8px 25px;
+  display: block;
+  /* font-size: 14px; */
+}
+
+/* --------------------------- */
+
+.menu_item :hover::after {
+  position: absolute;
+  right: 5%;
+  top: 70%;
+  transform: translateY(-50%) rotate(180deg);
+}
+.submenu_item h2 {
+  position: relative;
+}
+.submenu_item h2:hover {
+  padding-left: 7%;
+}
+.submenu_item h2:hover::before {
+  position: absolute;
+  transform: translateY(20%) translateX(-150%) rotate(180deg);
+}
+.menu_nav_servise {
+  margin-top: 18px;
+}
+
+.footer_lang {
+  display: flex;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  width: 117px;
+  height: 18px;
+}
+.footer_lang_list {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+.footer_lang_list li {
+  cursor: pointer;
+}
+
+.footer_lang_list li.active:hover {
+  color: orange;
+}
+.menu_nav_servis1,
+.menu_nav_servis2,
+.menu_nav_servis3 {
+  padding-top: 18px;
+}
+.menu_nav_servis1 a::before {
+  content: url('../png/heart.png');
+  margin-right: 7%;
+}
+.menu_nav_servis2 a::before {
+  content: url('../png/conditions.png');
+  margin-right: 7%;
+}
+.menu_nav_servis3 a::before {
+  content: url('../png/call.png');
+  margin-right: 7%;
+}
+.footer_lang_list::before {
+  content: url('../png/lang.png');
+  width: 17px;
+  height: 17px;
+}

@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+section {
+  width: 428px;
+  height: 2759px;
+  background-color: rgba(234, 234, 234, 1);
+}
+.section_header {
+  position: relative;
+  width: 428px;
+  height: 63px;
+  background-color: rgba(234, 234, 234, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.top_header {
+  width: 428px;
+  height: 63px;
+  background-color: rgba(234, 234, 234, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: auto;
+  position: absolute;
+  top: -63px;
+}
+.section_header:hover .top_header {
+  position: absolute;
+  top: 0px;
+}
+
+.name_page {
+  /* min-width: 189px; */
+  /* height: 21px; */
+  color: rgba(28, 28, 39, 1);
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+  /* margin-left: 20px; */
+  margin-left: 5%;
+  white-space: nowrap;
+}
+.qpick {
+  width: 85px;
+  height: 30px;
+  margin-left: 7%;
+}
+.arrow_to {
+  width: 31px;
+  height: 38px;
+  /* margin-left: 15px; */
+  margin-left: 3.5%;
+  cursor: pointer;
+}
+
+.basket_menu {
+  width: 128px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.frame_basket {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.frame_basket img {
+  width: 24px;
+  height: 24px;
+  position: fixed;
+  position: absolute;
+}
+.orange_cirkle {
+  height: 15px;
+  width: 15px;
+  background-color: rgba(255, 165, 66, 1);
+  /* opacity: 50%; */
+  border-radius: 50%;
+  position: relative;
+  left: 10px;
+  top: -8px;
+  z-index: 2;
+}
+.frame_basket p {
+  display: inline-block;
+}
+.orange_cirkle span {
+  width: 5px;
+  height: 16px;
+  color: rgba(255, 255, 255, 1);
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 500;
+  position: relative;
+  left: 5.2px;
+  top: -6px;
+}
+
+.frame_menu {
+  width: 40px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.frame_menu img {
+  width: 20px;
+  height: 18px;
+}
