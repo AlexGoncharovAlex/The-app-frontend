@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## Clone the repository
+```bash
+git clone https://github.com/AlexGoncharovAlex/The-app-frontend
+cd The-app-frontend
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
