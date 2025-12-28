@@ -3,16 +3,32 @@ import arrow_to from '../png/arrow_to.png';
 import qpick from '../png/qpick.png';
 import basket from '../png/basket.png';
 import burger_menu from '../png/burger.png';
+import MenuMobile from '../menuMobile/MenuMobile.js';
+import { useState, useRef, useEffect } from 'react';
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
     <>
       <section>
         <div className={style.section_header}>
           <div className={style.top_header}>
-            {/* <div className={style.arrow_to}>
-              <img src={arrow_to} alt="header arrow" />
-            </div> */}
             <div className={style.qpick}>
               <img src={qpick} alt="logo" />
             </div>
@@ -23,11 +39,22 @@ function Header() {
                 <div className={style.orange_cirkle}>
                   <span>1</span>
                 </div>
-                {/* <p>1</p> */}
-                {/* <span>1</span> */}
               </div>
-              <div className={style.frame_menu}>
-                <img src={burger_menu} alt="menu" />
+              <div className={style.menuWrapper} ref={menuRef}>
+                {/* КНОПКА */}
+                <div
+                  className={style.frame_menu}
+                  onClick={() => setIsOpen((prev) => !prev)}
+                >
+                  <img src={burger_menu} alt="menu" />
+                </div>
+
+                {/* МЕНЮ */}
+                <div
+                  className={`${style.menu_mob} ${isOpen ? style.open : ''}`}
+                >
+                  <MenuMobile />
+                </div>
               </div>
             </div>
           </div>

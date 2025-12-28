@@ -23,7 +23,7 @@ a,
 
 .wrapper {
   width: 294px;
-  max-height: 643px;
+  min-height: 400px;
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 1);
   border-radius: 0px 0px 0px 20px;
@@ -31,11 +31,8 @@ a,
     0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background: rgba(255, 255, 255, 1);
   padding: 15px 21px 24px 23px;
-}
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  position: absolute;
+  /* с absolute возможны траблы в будущем, об этом надо помнить!! */
 }
 
 .menu_item > h2 {
@@ -57,9 +54,7 @@ section {
   padding-left: 8%;
   position: absolute;
   top: 45%;
-
-  transform: translate(-50%, -50%);
-  transform: translateY(-50%, -50%) rotate(180deg);
+  transform: translate(-50%, -50%) rotate(360deg);
 }
 .menu_item h2,
 .submenu_item h2,
