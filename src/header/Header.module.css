@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
 }
-section {
+/* section {
   width: 428px;
-  height: 2759px;
+  min-height: 926px;
   background-color: rgba(234, 234, 234, 1);
-}
+} */
 .section_header {
   position: relative;
   width: 428px;
@@ -39,7 +39,6 @@ section {
   font-weight: 600;
   line-height: 21px;
   letter-spacing: 0%;
-  text-align: left;
   /* margin-left: 20px; */
   margin-left: 5%;
   white-space: nowrap;
@@ -47,13 +46,25 @@ section {
 .qpick {
   width: 85px;
   height: 30px;
-  margin-left: 7%;
+  margin-left: 4.5%;
+  display: flex;
+  align-items: center;
 }
+.qpick p {
+  margin: 0;
+  color: rgba(28, 28, 39, 1);
+  font-family: Montserrat;
+  font-style: SemiBold;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 21px;
+  margin-left: 25%;
+}
+
 .arrow_to {
-  width: 31px;
-  height: 38px;
-  /* margin-left: 15px; */
-  margin-left: 3.5%;
+  /* width: 31px;
+  height: 38px; */
+  /* margin-left: 3.5%; */
   cursor: pointer;
 }
 
@@ -70,6 +81,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10%;
   cursor: pointer;
 }
 .frame_basket img {
@@ -85,23 +97,27 @@ section {
   /* opacity: 50%; */
   border-radius: 50%;
   position: relative;
-  left: 10px;
-  top: -8px;
+  left: 100%;
+  top: -4px;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .frame_basket p {
   display: inline-block;
 }
 .orange_cirkle span {
-  width: 5px;
-  height: 16px;
+  /* width: 5px; */
+  /* height: 16px; */
   color: rgba(255, 255, 255, 1);
   font-family: Montserrat;
   font-size: 13px;
   font-weight: 500;
-  position: relative;
-  left: 5.2px;
-  top: -6px;
+  /* position: relative; */
+  /* left: 34.5%; */
+  /* top: -30%; */
+  /* margin: auto; */
 }
 
 .frame_menu {
@@ -129,13 +145,10 @@ section {
 } */
 .menu_mob {
   position: absolute;
-  top: 100%;
+  top: 135%;
   right: 700%;
-
-  /* max-height: 0; */
   overflow: hidden;
   opacity: 0;
-
   transition: max-height 0.6s ease, opacity 0.3s ease;
 }
 
@@ -143,4 +156,5 @@ section {
   max-height: 800px;
   opacity: 1;
   overflow: visible;
+  z-index: 2;
 }

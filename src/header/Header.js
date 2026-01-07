@@ -5,10 +5,12 @@ import basket from '../png/basket.png';
 import burger_menu from '../png/burger.png';
 import MenuMobile from '../menuMobile/MenuMobile.js';
 import { useState, useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-function Header() {
+function Header({ title, showBack }) {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -26,40 +28,42 @@ function Header() {
 
   return (
     <>
-      <section>
-        <div className={style.section_header}>
-          <div className={style.top_header}>
-            <div className={style.qpick}>
-              <img src={qpick} alt="logo" />
-            </div>
-            <h1 className={style.name_page}> </h1>
-            <div className={style.basket_menu}>
-              <div className={style.frame_basket}>
+      {/* <section> */}
+      <div className={style.section_header}>
+        <div className={style.top_header}>
+          <div className={style.qpick} onClick={() => navigate(-1)}>
+            <img className={style.arrow_to} src={arrow_to} alt="logo" />
+
+            {title ? <p>{title}</p> : <img src={qpick} alt="logo" />}
+          </div>
+          {/* <h1 className={style.name_page}> </h1> */}
+          <div className={style.basket_menu}>
+            <div className={style.frame_basket}>
+              <a href="/basket">
                 <img src={basket} alt="basket" />
                 <div className={style.orange_cirkle}>
                   <span>1</span>
                 </div>
+              </a>
+            </div>
+            <div className={style.menuWrapper} ref={menuRef}>
+              {/* КНОПКА */}
+              <div
+                className={style.frame_menu}
+                onClick={() => setIsOpen((prev) => !prev)}
+              >
+                <img src={burger_menu} alt="menu" />
               </div>
-              <div className={style.menuWrapper} ref={menuRef}>
-                {/* КНОПКА */}
-                <div
-                  className={style.frame_menu}
-                  onClick={() => setIsOpen((prev) => !prev)}
-                >
-                  <img src={burger_menu} alt="menu" />
-                </div>
 
-                {/* МЕНЮ */}
-                <div
-                  className={`${style.menu_mob} ${isOpen ? style.open : ''}`}
-                >
-                  <MenuMobile />
-                </div>
+              {/* МЕНЮ */}
+              <div className={`${style.menu_mob} ${isOpen ? style.open : ''}`}>
+                <MenuMobile />
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      {/* </section> */}
     </>
   );
 }

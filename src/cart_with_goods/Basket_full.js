@@ -9,6 +9,7 @@ import map from '../png/map.png';
 import air_pods from '../png/air_pods.png';
 import del from '../png/delete.png';
 import { useState, useRef, useEffect } from 'react';
+import Header from '../header/Header.js';
 
 const options = [
   'Самовывоз из магазина',
@@ -38,13 +39,13 @@ function Basket_full() {
 
   return (
     <section className={style.basket_section}>
-      <div className={style.section_header}>
+      {/* <div className={style.section_header}>
         <div className={style.top_header}>
-          <div className={style.qpick}>
-            {/* <img src={qpick} alt="logo" /> */}
-            <img src={arrow_to} alt="png picture" />
-            {/* <p>Корзина</p> */}
-          </div>
+          <div className={style.qpick}> */}
+      {/* <img src={qpick} alt="logo" /> */}
+      {/* <img src={arrow_to} alt="png picture" /> */}
+      {/* <p>Корзина</p> */}
+      {/* </div>
           <h1 className={style.name_page}> </h1>
           <div className={style.basket_menu}>
             <div className={style.frame_basket}>
@@ -59,8 +60,8 @@ function Basket_full() {
             </div>
           </div>
         </div>
-      </div>
-
+      </div> */}
+      {/* <Header /> */}
       {/* ---------------------- */}
       <div className={style.cart_goods}>
         <div className={style.cart_goods_up}>

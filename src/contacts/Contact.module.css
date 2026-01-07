@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+}
+
+.contact_section {
+  max-height: 926px;
+  width: 428px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: rgba(234, 234, 234, 1);
+}
+.top_header {
+  width: 428px;
+  height: 63px;
+  background-color: rgba(234, 234, 234, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: auto;
+  /* position: absolute; */
+  /* top: -63px; */
+}
+
+.name_page {
+  color: rgba(28, 28, 39, 1);
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-left: 5%;
+  white-space: nowrap;
+}
+.qpick {
+  position: relative;
+  margin-left: 3.5%;
+}
+
+.qpick::after {
+  content: 'Контакты';
+  color: rgba(28, 28, 39, 1);
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 21px;
+  position: absolute;
+  left: 158%;
+  top: 20%;
+  white-space: nowrap;
+}
+
+.basket_menu {
+  width: 128px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.frame_basket {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.frame_basket img {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.orange_cirkle {
+  height: 15px;
+  width: 15px;
+  background-color: rgba(255, 165, 66, 1);
+  border-radius: 50%;
+  position: relative;
+  left: 10px;
+  top: -8px;
+  z-index: 2;
+}
+.frame_basket p {
+  display: inline-block;
+}
+.orange_cirkle span {
+  width: 5px;
+  height: 16px;
+  color: rgba(255, 255, 255, 1);
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 500;
+  position: relative;
+  left: 5.2px;
+  top: -6px;
+}
+
+.frame_menu {
+  width: 40px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.frame_menu img {
+  width: 20px;
+  height: 18px;
+}
+/* ---------------------- */
+/* ---------------------- */
+/* ---------------------- */
+.block_address {
+  width: 379px;
+  height: 297px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 1);
+  padding: 15px 17px 12px 17px;
+  /* margin: 20px auto 0 auto; */
+  margin: 0 auto;
+}
+.block_address h2 {
+  color: rgba(28, 28, 39, 1);
+  font-family: Montserrat;
+  font-style: SemiBold;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 21px;
+}
+.block_address p {
+  margin: 0;
+}
+.address_on_cart {
+  width: 345.43px;
+  height: 177px;
+  background: url('../png/map.png');
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.accommodation {
+  margin-top: 18px;
+  position: relative;
+  margin-left: 30px;
+}
+.accommodation::before {
+  position: absolute;
+  content: url('../png/point_gps.png');
+  left: -9%;
+  top: 20%;
+}
+.accommodation p:nth-child(1) {
+  color: rgba(0, 0, 0, 1);
+  font-family: Montserrat;
+  font-style: Medium;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.accommodation p:nth-child(2) {
+  color: rgba(131, 131, 131, 1);
+  font-family: Montserrat;
+  font-style: Medium;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+/* ---------------------- */
+/* ---------------------- */
+/* ---------------------- */
+.social_contact {
+  margin-left: 7%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 180px 180px;
+}
+.social_contact div {
+  width: 170px;
+  height: 160px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 1);
+}
+.social_contact div:nth-child(1) a {
+  content: url('../png/whatsapp.png');
+  margin: 28% 30%;
+}
+.social_contact div:nth-child(2) a {
+  content: url('../png/instagram.png');
+  margin: 28% 30%;
+}
+.social_contact div:nth-child(3) a {
+  content: url('../png/telegram.png');
+  margin: 28% 30%;
+}
+.social_contact div:nth-child(4) a {
+  content: url('../png/vk.png');
+  margin: 29.5% 22.5%;
+}
+.social_contact div:hover {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
+}
+/* ----------------------------------- */
+/* ----------------------------------- */
+.telefon_to_call::before {
+  content: url('../png/telefon_to_call.png');
+  margin-right: 3%;
+}
+.telefon_to_call {
+  color: rgba(0, 0, 0, 1);
+  font-family: Montserrat;
+  font-style: SemiBold;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  /* margin: 8px 5px 0 0; */
+  margin: 8px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+/* ----------------------------------- */
+.button_to_main {
+  width: 380px;
+  height: 65px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  background: rgba(16, 16, 16, 1);
+
+  color: rgba(255, 255, 255, 1);
+  font-family: Montserrat;
+  font-style: SemiBold;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: center;
+  display: block; /* Превращаем в блочный элемент */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 39px;
+
+  cursor: pointer;
+}

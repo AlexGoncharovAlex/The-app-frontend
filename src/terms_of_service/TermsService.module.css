@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+.section_terms_service {
+  min-height: 926px;
+  width: 428px;
+  padding-bottom: 20px;
+}
+.top_header {
+  width: 428px;
+  height: 63px;
+  background-color: rgba(234, 234, 234, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: auto;
+  /* position: absolute; */
+  /* top: -63px; */
+}
+
+.name_page {
+  /* min-width: 189px; */
+  /* height: 21px; */
+  color: rgba(28, 28, 39, 1);
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+  /* margin-left: 20px; */
+  margin-left: 5%;
+  white-space: nowrap;
+}
+.qpick {
+  position: relative;
+  margin-left: 3.5%;
+}
+
+.qpick::after {
+  content: 'Условия сервиса ';
+  color: rgba(28, 28, 39, 1);
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 21px;
+  position: absolute;
+  left: 158%;
+  top: 20%;
+  white-space: nowrap;
+}
+
+.basket_menu {
+  width: 128px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.frame_basket {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.frame_basket img {
+  width: 24px;
+  height: 24px;
+  /* position: fixed; */
+  position: absolute;
+}
+.orange_cirkle {
+  height: 15px;
+  width: 15px;
+  background-color: rgba(255, 165, 66, 1);
+  /* opacity: 50%; */
+  border-radius: 50%;
+  position: relative;
+  left: 10px;
+  top: -8px;
+  z-index: 2;
+}
+.frame_basket p {
+  display: inline-block;
+}
+.orange_cirkle span {
+  width: 5px;
+  height: 16px;
+  color: rgba(255, 255, 255, 1);
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 500;
+  position: relative;
+  left: 5.2px;
+  top: -6px;
+}
+
+.frame_menu {
+  width: 40px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.frame_menu img {
+  width: 20px;
+  height: 18px;
+}
+/* ----------------------------- */
+/* ----------------------------- */
+/* ----------------------------- */
+.service_conditions,
+.return_conditions {
+  width: 380px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 1);
+  padding: 15px 22px 28px 15px;
+  margin: 15px auto auto auto;
+}
+.service_conditions + .return_conditions p,
+p {
+  margin: 15px 0 0 8px;
+}
+.service_conditions,
+.return_conditions h2,
+h2 {
+  color: rgba(28, 28, 39, 1);
+  font-family: Montserrat;
+  font-style: SemiBold;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 21px;
+}
+.service_conditions,
+.return_conditions p {
+  color: rgba(0, 0, 0, 1);
+  font-family: Montserrat;
+  font-style: Regular;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.button_to_main {
+  width: 380px;
+  height: 65px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  background: rgba(16, 16, 16, 1);
+  /* ---------- */
+  color: rgba(255, 255, 255, 1);
+  font-family: Montserrat;
+  font-style: SemiBold;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 21px;
+  /* ---------- */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto 0 auto;
+  cursor: pointer;
+}

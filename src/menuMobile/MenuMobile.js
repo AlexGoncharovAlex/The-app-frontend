@@ -5,7 +5,7 @@ import lang from '../png/lang.png';
 import conditions from '../png/conditions.png';
 import heart from '../png/heart.png';
 import call from '../png/call.png';
-
+import Contact from '../contacts/Contact.js';
 function MenuMobile() {
   return (
     // <section>
@@ -135,7 +135,7 @@ function MenuMobile() {
         <a href="#">Условия сервиса</a>
       </div>
       <div className={style.menu_nav_servis3}>
-        <a href="#">Контакты</a>
+        <a href="/contact">Контакты</a>
       </div>
       <div className={style.footer_lang}>
         <ul className={style.footer_lang_list}>
