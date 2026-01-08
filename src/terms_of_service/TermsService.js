@@ -7,12 +7,12 @@ function TermsService() {
   return (
     <section className={style.section_terms_service}>
       {/* <div className={style.section_header}> */}
-      <div className={style.top_header}>
-        <div className={style.qpick}>
-          {/* <img src={qpick} alt="logo" /> */}
-          <img src={arrow_to} alt="png picture" />
-          {/* <p>Корзина</p> */}
-        </div>
+      {/* <div className={style.top_header}> */}
+      {/* <div className={style.qpick}> */}
+      {/* <img src={qpick} alt="logo" /> */}
+      {/* <img src={arrow_to} alt="png picture" /> */}
+      {/* <p>Корзина</p> */}
+      {/* </div>
         <h1 className={style.name_page}> </h1>
         <div className={style.basket_menu}>
           <div className={style.frame_basket}>
@@ -26,7 +26,7 @@ function TermsService() {
             <img src={burger_menu} alt="menu" />
           </div>
         </div>
-      </div>
+      </div> */}
       {/* </div> */}
       {/* ----------------------------------- */}
       {/* ----------------------------------- */}

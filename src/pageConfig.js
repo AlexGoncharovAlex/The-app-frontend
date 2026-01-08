@@ -13,8 +13,16 @@ export const pageConfig = {
     title: 'Профиль',
     back: true,
   },
-  '/product': {
-    title: 'Товар',
+  '/contact': {
+    title: 'Контакты',
+    back: true,
+  },
+  '/empty': {
+    title: null,
+    back: false,
+  },
+  '/terms_of_service': {
+    title: 'Условия сервиса',
     back: true,
   },
 };

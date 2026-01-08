@@ -59,6 +59,7 @@
   font-weight: 600;
   line-height: 21px;
   margin-left: 25%;
+  white-space: nowrap;
 }
 
 .arrow_to {

@@ -5,7 +5,9 @@
 .section_terms_service {
   min-height: 926px;
   width: 428px;
-  padding-bottom: 20px;
+  padding-bottom: 2.6%;
+  padding-top: 0.1%;
+  background-color: rgba(234, 234, 234, 1);
 }
 .top_header {
   width: 428px;

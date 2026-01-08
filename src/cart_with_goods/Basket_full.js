@@ -22,6 +22,7 @@ function Basket_full() {
   const [isOpen, setIsOpen] = useState(false);
   const [selected, setSelected] = useState(options[0]);
   const ref = useRef(null);
+  console.log(ref.current);
   const city = 'Киев';
 
   useEffect(() => {
@@ -39,29 +40,6 @@ function Basket_full() {
 
   return (
     <section className={style.basket_section}>
-      {/* <div className={style.section_header}>
-        <div className={style.top_header}>
-          <div className={style.qpick}> */}
-      {/* <img src={qpick} alt="logo" /> */}
-      {/* <img src={arrow_to} alt="png picture" /> */}
-      {/* <p>Корзина</p> */}
-      {/* </div>
-          <h1 className={style.name_page}> </h1>
-          <div className={style.basket_menu}>
-            <div className={style.frame_basket}>
-              <img src={basket} alt="basket" />
-              <div className={style.orange_cirkle}>
-                <span>1</span>
-              </div>
-            </div>
-
-            <div className={style.frame_menu}>
-              <img src={burger_menu} alt="menu" />
-            </div>
-          </div>
-        </div>
-      </div> */}
-      {/* <Header /> */}
       {/* ---------------------- */}
       <div className={style.cart_goods}>
         <div className={style.cart_goods_up}>

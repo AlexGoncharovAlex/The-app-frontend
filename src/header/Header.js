@@ -5,12 +5,20 @@ import basket from '../png/basket.png';
 import burger_menu from '../png/burger.png';
 import MenuMobile from '../menuMobile/MenuMobile.js';
 import { useState, useRef, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 function Header({ title, showBack }) {
+  console.log(title, showBack);
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
   const navigate = useNavigate();
+  const imgRef = useRef();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === '/' || location.pathname === '/empty')
+      imgRef.current.style.display = 'none';
+  });
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -32,7 +40,12 @@ function Header({ title, showBack }) {
       <div className={style.section_header}>
         <div className={style.top_header}>
           <div className={style.qpick} onClick={() => navigate(-1)}>
-            <img className={style.arrow_to} src={arrow_to} alt="logo" />
+            <img
+              className={style.arrow_to}
+              ref={imgRef}
+              src={arrow_to}
+              alt="logo"
+            />
 
             {title ? <p>{title}</p> : <img src={qpick} alt="logo" />}
           </div>
