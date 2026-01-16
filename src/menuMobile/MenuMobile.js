@@ -129,7 +129,7 @@ function MenuMobile() {
           </ul>
         </nav>
         <div className={style.menu_nav_servis1}>
-          <a href="#">Избранное</a>
+          <a href="/selected">Избранное</a>
         </div>
         <div className={style.menu_nav_servis2}>
           <a href="/terms_of_service">Условия сервиса</a>

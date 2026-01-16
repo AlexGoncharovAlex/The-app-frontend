@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+.section_select {
+  width: 428px;
+  min-height: 957px;
+  background-color: rgba(234, 234, 234, 1);
+  padding: 17px 24px 31px 25px;
+}
+.select_goods_card {
+  width: 379px;
+  height: 410px;
+  padding: 18px 26px 11px 24px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 1);
+}
+.select_goods_card .select_goods_png {
+  margin-top: -26px;
+}
+.select_goods_card div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.select_goods_info {
+  height: 40.23px;
+  position: relative;
+}
+.select_goods_info p {
+  margin: 0;
+}
+.select_goods_info > p {
+  position: absolute;
+  right: 2%;
+  top: -10%;
+  color: rgba(255, 165, 66, 1);
+  font-family: Montserrat;
+  font-style: SemiBold;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 21px;
+}
+.select_goods_info > p span {
+  margin-left: 7%;
+}
+.select_goods_about > span {
+  color: rgba(28, 28, 39, 1);
+  font-family: Montserrat;
+  font-style: SemiBold;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 21px;
+  white-space: nowrap;
+  margin-bottom: 15%;
+}
+
+.select_price_and_discount {
+  width: 28%;
+  position: relative;
+  top: 35%;
+  left: -5%;
+}
+.select_price_and_discount p:nth-child(1) {
+  color: rgba(191, 187, 180, 1);
+  font-family: Montserrat;
+  font-style: SemiBold;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.select_price_and_discount p:nth-child(1) > span {
+  position: relative;
+  margin-left: 10%;
+}
+.select_price_and_discount p:nth-child(1) > span::after {
+  content: '';
+  position: absolute;
+  bottom: 35%;
+  border: 1px solid rgba(223, 100, 100, 1);
+  height: 0;
+  width: 55px;
+}
+.select_price_and_discount p:nth-child(2) {
+  color: rgba(223, 100, 100, 1);
+  font-family: Montserrat;
+  font-style: SemiBold;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.divHeart {
+  cursor: pointer;
+  width: 24px;
+  height: 20px;
+
+  position: relative;
+  z-index: 10;
+}

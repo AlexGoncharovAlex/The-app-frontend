@@ -6,11 +6,13 @@ import Basket from './cart_empty/Basket.js';
 import Basket_full from './cart_with_goods/Basket_full.js';
 import Contact from './contacts/Contact.js';
 import TermsService from './terms_of_service/TermsService.js';
+import Selected from './selected/Selected.js';
+import GoodsList from './GoodsList.js';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
+    <>
       {/* <Router> */}
 
       <Routes>
@@ -21,11 +23,19 @@ function App() {
           <Route path="/basket" element={<Basket_full />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/terms_of_service" element={<TermsService />} />
+          <Route path="/selected" element={<GoodsList />} />
         </Route>
       </Routes>
       {/* </Router> */}
-    </div>
+    </>
   );
 }
 
 export default App;
+
+/*
+git status
+git add .
+git commit -m "что сделал"
+git push
+*/

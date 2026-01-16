@@ -25,4 +25,8 @@ export const pageConfig = {
     title: 'Условия сервиса',
     back: true,
   },
+  '/selected': {
+    title: 'Избраное',
+    back: true,
+  },
 };
